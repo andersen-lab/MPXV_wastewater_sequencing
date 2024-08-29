@@ -1,10 +1,10 @@
-# Establishing a MXPV wastewater sequencing workflow
+# MXPV wastewater qPCR & sequencing
 
-The goal of this project to identify and track MPXV clades and lineages in wastewater. Viral load will be determined using qPCR or ddPCR, while limited amplicon sequencing is used to identify MPXV clades and linages.
+The goal of this project to identify and track MPXV clades and lineages in wastewater. Viral load will be determined using qPCR or ddPCR, while limited amplicon sequencing is used to identify MPXV clades and lineages.
 
 ## qPCR/ddPCR
 
-Pan-MPXV primers and probes used for viral quantification (from [Li et al](https://doi.org/10.1016/j.jviromet.2010.07.012)):
+Pan-MPXV primers and probes used for viral quantification (from [Li et al.](https://doi.org/10.1016/j.jviromet.2010.07.012)):
 
 | 	Oligos	                                    | sequences			 						                   |
 |:----------------------------------------------|---------------------------------------------:|
@@ -15,17 +15,17 @@ Pan-MPXV primers and probes used for viral quantification (from [Li et al](https
 
 ## Amplicon sequencing
 
-To limit the number of amplicons, we first determine the minimum set of nucleotide positions needed to discriminate between all clades/lineages
+To limit the number of amplicons, we first determine the minimum set of nucleotide positions needed to discriminate between all clades/lineages as annotated in the [NextStrain tree](https://nextstrain.org/mpox/all-clades). 
 ```sh
 python ./scripts/minimize_barcodes.py
 ```
-This results in a list of 36 nucleotide positions (minimal_positions.csv) that cover all lineages (minimal_barcodes.csv).
+This results in a list of 36 nucleotide positions (minimal_positions.csv) that cover all currently assigned lineages (minimal_barcodes.csv).
 
-Next, we search for forward and reverse primers around these nucleotide positions.
+Next, we create amplicons by searching for forward and reverse primers around these 36 nucleotide positions.
 ```sh
 python ./scripts/find_primers.py
 ```
-These primer sets are non-overlapping. Two amplicons span 2 nucleotide positions, reducing the total number of amplicons to 34 (primers_output.csv).
+Two amplicons span 2 nucleotide positions, reducing the total number of amplicons to 34 (primers_output.csv). Amplicons are non-overlapping
 
 We then cross-check in the alignment if the primer-binding locations contain mutations that could lead to amplicon drop out.
 ```sh
