@@ -1,16 +1,15 @@
-# Establsihing a MXPV wastewater sequencing workflow
+# Establishing a MXPV wastewater sequencing workflow
 
 The goal of this project to identify and track MPXV clades and lineages in wastewater. Viral load will be determined using qPCR or ddPCR, while limited amplicon sequencing is used to identify MPXV clades and linages.
 
-
 ## qPCR/ddPCR
 
-Pan-MPXV primers and probes used for viral quantification (from [Li et al](https://doi.org/10.1016/j.jviromet.2010.07.012):
+Pan-MPXV primers and probes used for viral quantification (from [Li et al](https://doi.org/10.1016/j.jviromet.2010.07.012)):
 
-| 		                                          |   sequences			 						 |
-|:------------------------------------------------|---------------------------------------------:|
-| G2R_G_forward                                   |  5′-GGAAAATGTAAAGACAACGAATACAG 				 |
-| G2R_G_reverse                                	  |  5′-GCTATCACATAATCTGGAAGCGTA 				 |
+| 	Oligos	                                    | sequences			 						                   |
+|:----------------------------------------------|---------------------------------------------:|
+| G2R_G_forward                                 |  5′-GGAAAATGTAAAGACAACGAATACAG 				       |
+| G2R_G_reverse                                	|  5′-GCTATCACATAATCTGGAAGCGTA 				         |
 | G2R_G_probe                                	  |  5′FAM-AAGCCGTAATCTATGTTGTCTATCGTGTCC-3′BHQ1 |
 
 
