@@ -25,13 +25,13 @@ Next, we create amplicons by searching for forward and reverse primers around th
 ```sh
 python ./scripts/find_primers.py
 ```
-Two amplicons span 2 nucleotide positions, reducing the total number of amplicons to 34 (primers_output.csv). Amplicons are non-overlapping
+Two amplicons span 2 nucleotide positions, reducing the total number of amplicons to 34 (primers_output.csv). Amplicons are non-overlapping.
 
-We then cross-check in the alignment if the primer-binding locations contain mutations that could lead to amplicon drop out.
+We then do a quick cross-check in the alignment if the primer-binding locations contain mutations that could lead to amplicon drop out.
 ```sh
 python ./scripts/primer_variation_check.py
 ```
-Most primer-binding sites show no or very limited diversity. Only, one mismatch in primer 25644 was resolved by introducing an ambiguous nucleotide (primer_variations.csv).
+Most primer-binding sites show no or very limited diversity. One mismatch in primer 25644 was resolved by introducing an ambiguous nucleotide (primer_variations.csv).
 
 ## To do
 - add additional amplicons in variable regions
