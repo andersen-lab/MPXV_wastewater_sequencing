@@ -6,7 +6,7 @@ The goal of this project to identify and track MPXV clades and lineages in waste
 
 Pan-MPXV primers and probes used for viral quantification (from [Li et al.](https://doi.org/10.1016/j.jviromet.2010.07.012)):
 
-| 	Oligos	                                    | sequences			 						                   |
+| Oligo names	                                  |  Sequences			 						                 |
 |:----------------------------------------------|---------------------------------------------:|
 | G2R_G_forward                                 |  5′-GGAAAATGTAAAGACAACGAATACAG 				       |
 | G2R_G_reverse                                	|  5′-GCTATCACATAATCTGGAAGCGTA 				         |
