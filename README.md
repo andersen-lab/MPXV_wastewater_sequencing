@@ -1,4 +1,4 @@
-# MXPV wastewater qPCR & sequencing
+# MPXV wastewater qPCR & sequencing
 
 The goal of this project to identify and track MPXV clades and lineages in wastewater. Viral load will be determined using qPCR or ddPCR, while limited amplicon sequencing is used to identify MPXV clades and lineages.
 
