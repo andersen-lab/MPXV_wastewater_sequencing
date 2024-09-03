@@ -53,9 +53,9 @@ def modify_site_names(site_names):
     return [site[1:-1] for site in site_names]
 
 # File paths
-file_path = './data/barcodes_mpxv_merged_no_homoplasic_sites_v3.csv'
-output_min_sites_file = './minimal_sites_v3.csv'
-output_min_barcodes_file = './minimal_barcodes_v3.csv'
+file_path = './data/barcodes_mpxv_merged_no_homoplasic_sites_trimmed.csv'
+output_min_sites_file = './minimal_sites.csv'
+output_min_barcodes_file = './minimal_barcodes.csv'
 
 # Load the data
 df = pd.read_csv(file_path, index_col=0)

@@ -108,9 +108,9 @@ def write_bed_file(primers, bed_file, chromosome='chr1'):
 
 # Example usage
 fasta_file = "./data/mpxv_reference.fasta"
-positions_csv = "./minimal_sites_v3_added_Iab_seq.csv"
-output_csv = "./primers_output_v2.csv"
-output_bed = "./primers_output_v2.bed"
+positions_csv = "./minimal_sites.csv"
+output_csv = "./primers_output.csv"
+output_bed = "./prelim_primers_output.bed"
 
 reference_sequence = read_fasta(fasta_file)
 positions = read_positions_from_csv(positions_csv)

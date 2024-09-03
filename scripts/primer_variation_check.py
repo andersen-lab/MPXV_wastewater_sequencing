@@ -84,9 +84,9 @@ def write_variations_summary_to_csv(variations, num_sequences, output_csv):
     df.to_csv(output_csv, index=False)
 
 if __name__ == "__main__":
-    primers_csv = "./primers_output_v2.csv"
-    msa_file = "./data/mpxv_alignment_nextstrain.fasta"
-    output_csv = "./primer_variations_v3.csv"
+    primers_csv = "./primers_output.csv"
+    msa_file = ".data/mpxv_alignment_nextstrain.fasta"
+    output_csv = "./primer_variations.csv"
 
     # Parse the CSV file to get primer binding sites
     primers = parse_primers_csv(primers_csv)

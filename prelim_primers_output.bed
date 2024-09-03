@@ -14,8 +14,6 @@ chr1	140313	140333	forward_primer_140492
 chr1	140537	140517	reverse_primer_140492
 chr1	151420	151442	forward_primer_151461
 chr1	151646	151626	reverse_primer_151461
-chr1	188	209	forward_primer_311
-chr1	457	435	reverse_primer_311
 chr1	100780	100800	forward_primer_100971
 chr1	101036	101016	reverse_primer_100971
 chr1	102785	102805	forward_primer_103019
@@ -36,6 +34,8 @@ chr1	70592	70612	forward_primer_70780
 chr1	70816	70793	reverse_primer_70780
 chr1	105679	105699	forward_primer_105923
 chr1	105943	105925	reverse_primer_105923
+chr1	145953	145973	forward_primer_146022
+chr1	146202	146181	reverse_primer_146022
 chr1	74141	74161	forward_primer_74360
 chr1	74423	74403	reverse_primer_74360
 chr1	185313	185333	forward_primer_185557
