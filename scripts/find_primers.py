@@ -33,7 +33,7 @@ def design_primers(reference_seq, positions, product_size_range=(225, 285), anne
                 'PRIMER_PICK_INTERNAL_OLIGO': 1,
                 'PRIMER_INTERNAL_MAX_SELF_END': 8,
                 'PRIMER_MIN_SIZE': 18,
-                'PRIMER_MAX_SIZE': 27,
+                'PRIMER_MAX_SIZE': 35,
                 'PRIMER_OPT_TM': annealing_temp,
                 'PRIMER_MIN_TM': annealing_temp - 2.0,
                 'PRIMER_MAX_TM': annealing_temp + 2.0,
@@ -108,9 +108,9 @@ def write_bed_file(primers, bed_file, chromosome='chr1'):
 
 # Example usage
 fasta_file = "./data/mpxv_reference.fasta"
-positions_csv = "./minimal_sites_for_primers.csv"
-output_csv = "./primers_output.csv"
-output_bed = "./primers_output.bed"
+positions_csv = "./minimal_sites_v3_added_Iab_seq.csv"
+output_csv = "./primers_output_v2.csv"
+output_bed = "./primers_output_v2.bed"
 
 reference_sequence = read_fasta(fasta_file)
 positions = read_positions_from_csv(positions_csv)
