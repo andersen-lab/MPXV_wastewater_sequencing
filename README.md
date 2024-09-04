@@ -15,23 +15,23 @@ Pan-MPXV primers and probes used for viral quantification (from [Li et al.](http
 
 ## Amplicon sequencing
 
-To limit the number of amplicons, we first determine the minimum set of nucleotide positions needed to discriminate between all clades/lineages as annotated in the [NextStrain tree](https://nextstrain.org/mpox/all-clades). 
+To limit the number of amplicons, we first determine the minimum set of nucleotide positions needed to discriminate between all clades/lineages as annotated in the [NextStrain tree](https://nextstrain.org/mpox/all-clades). For this we excluded all homoplasic sites. We also excluded sites within 1000 nts of the 5' and 3' end as relatively few genomes have coverage in those regions.
 ```sh
 python ./scripts/minimize_barcodes.py
 ```
-This results in a list of 36 nucleotide positions (minimal_positions.csv) that cover all currently assigned lineages (minimal_barcodes.csv).
+This results in a list of 44 nucleotide positions (minimal_positions.csv) that cover all currently assigned lineages (minimal_barcodes.csv) and some variation in Clade Ia and Ib (no lineages have been defined for these clades yet). 
 
-Next, we create amplicons by searching for forward and reverse primers around these 36 nucleotide positions.
+Next, we create amplicons by searching for forward and reverse primers around these 44 nucleotide positions.
 ```sh
 python ./scripts/find_primers.py
 ```
-Two amplicons span 2 nucleotide positions, reducing the total number of amplicons to 34 (primers_output.csv). Amplicons are non-overlapping.
+Several amplicons span multiple nucleotide positions, reducing the total number of amplicons to 38 (primers_output.csv). Amplicons are non-overlapping.
 
-We then do a quick cross-check in the alignment if the primer-binding locations contain mutations that could lead to amplicon drop out.
+We then do a quick cross-check in the alignment if the primer-binding locations contain mutations that could lead to amplicon drop-out.
 ```sh
 python ./scripts/primer_variation_check.py
 ```
-Most primer-binding sites show no or very limited diversity. One mismatch in primer 25644 was resolved by introducing an ambiguous nucleotide (primer_variations.csv).
+Most primer-binding sites show no or very limited diversity (primer_variations.csv).
 
 ## To do
 - add additional amplicons in variable regions
