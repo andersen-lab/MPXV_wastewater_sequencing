@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # Load the CSV file that needs to be filtered
-data_file = "./data/MPXV_wastewater_sequencing/data/barcodes_mpxv_merged.csv"
+data_file = "./data/barcodes_mpxv_large.csv"
 data_df = pd.read_csv(data_file)
 
 # Load the CSV file with the column numbers to be filtered
@@ -24,6 +24,6 @@ columns_to_drop = [col for col in data_df.columns if extract_number(col) in filt
 filtered_df = data_df.drop(columns=columns_to_drop)
 
 # Save the filtered dataframe to a new CSV file
-filtered_df.to_csv("./data/barcodes_mpxv_merged_no_homoplasic_sites.csv", index=False)
+filtered_df.to_csv("./data/barcodes_mpxv_large_no_homoplasic_sites.csv", index=False)
 
-print("Columns filtered successfully and saved to 'filtered_data.csv'.")
+print("Columns filtered successfully")
