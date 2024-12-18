@@ -8,7 +8,7 @@ Details for mpox qPCR can be found [here](https://docs.google.com/document/d/1gJ
 
 ## Amplicon sequencing
 
-We have developed a limited amplicon panel to track mpox in wastewater, which is currently undergoing validation. Full details of the Illumina and ONT sequencing protocols, including primer sequences and PCR conditions, can be found [here] (https://docs.google.com/document/d/16wW9Z8x56SuXh_-_rdKi04XwALk-fom-WNRF0cfFlOA/edit?usp=sharing) and [here] (https://docs.google.com/document/d/18B24xHGjn-GOMYlefXGzfzYsH5kJM3vz_ndUm467Yq8/edit?usp=sharing). Both protocols use the same MPXV primer sets, but use a different barcoding system.
+We have developed a limited amplicon panel to track mpox in wastewater, which is currently undergoing validation. Full details of the Illumina and ONT sequencing protocols, including primer sequences and PCR conditions, can be found [here](https://docs.google.com/document/d/16wW9Z8x56SuXh_-_rdKi04XwALk-fom-WNRF0cfFlOA/edit?usp=sharing) and [here](https://docs.google.com/document/d/18B24xHGjn-GOMYlefXGzfzYsH5kJM3vz_ndUm467Yq8/edit?usp=sharing). Both protocols use the same MPXV primer sets, but use a different barcoding system.
 
 ### Amplicon selection
 
