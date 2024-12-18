@@ -1,0 +1,12 @@
+name: demix
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python==3.10
+  - pandas==2.2.3
+  - seqkit==2.9.0
+  - pysam==0.22.1
+  - ivar==1.4.3
+  - samtools==1.21
+  - freyja==1.5.2

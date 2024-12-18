@@ -1,0 +1,26 @@
+[arrangement]
+name = "CustomBarcodes"
+kit = "CustomBarcodes"
+
+mask1_front = ""
+mask1_rear = "ACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+mask2_front = ""
+mask2_rear = "GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT"
+
+# Barcode sequences
+barcode1_pattern = "NB%02i"
+barcode2_pattern = "NB%02i"
+first_index = 1
+last_index = 48
+
+## Scoring options
+[scoring]
+max_barcode_penalty = 9
+barcode_end_proximity = 75
+min_barcode_penalty_dist = 3
+min_separation_only_dist = 8
+flank_left_pad = 10
+flank_right_pad = 10
+front_barcode_window = 100
+rear_barcode_window = 100
+midstrand_flank_score = 0.95
